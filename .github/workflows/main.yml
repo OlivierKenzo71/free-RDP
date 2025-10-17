@@ -1,4 +1,4 @@
-name: RDP_TIPSUNIX
+name: RDP_AMD_EPYC_7763
 
 on:
   workflow_dispatch:
@@ -101,7 +101,6 @@ jobs:
       - name: Maintain Connection
         run: |
           Write-Host "`n=== RDP ACCESS ==="
-          Write-Host "http://www.youtube.com/@TipsUNIX"
           Write-Host "Address: $env:TAILSCALE_IP"
           Write-Host "Username: RDP"
           Write-Host "Password: $(echo $env:RDP_CREDS)"
